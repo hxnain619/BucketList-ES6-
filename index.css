@@ -1,0 +1,182 @@
+body {
+			background: #1e1d1d;
+			padding: 3em;
+			font-family: cursive !important;
+			color: #fff;
+		}
+
+		.container {
+			display: grid;
+			grid-template-columns: 50% auto;
+		}
+		
+		.col {
+			padding: .4em 1.3em;
+		}
+		
+		.color-dark {
+			padding: 5px;
+			padding-left: 20px;
+			background: black;
+			color: #0b485e;
+			border-top-left-radius: 40px;
+		}
+		
+		.color-light {
+			background: #141313;
+			padding: 2%;
+			padding-left: 1%;
+			border-bottom-right-radius: 40px;
+		}
+		
+		.sm {
+			margin-top: 5px;
+			padding-bottom: 1em;
+			
+		}
+		
+		#txt {
+			border: 0;
+			padding: 1.2em;
+			width : 80%;
+			margin-bottom: 2em;
+			background: white;
+			color: #0b485e;	
+			border-top-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			font-size: .85em;
+			font-family: cursive !important;
+			
+		}
+		
+		#txt:focus-within {
+			
+			border: 2px solid #00a0dc;
+		
+		}
+		
+		input.btn {
+			border: 0;
+			display: block;
+			padding: 1em 3em;
+			background-color: black;
+			color: white;
+			font-size : 13px;
+			margin-bottom: 1em;
+			cursor: pointer;
+			border-top-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			font-family: cursive !important;
+		}
+		
+		input.btn:hover,.life-container:hover {
+			
+			border: 1px solid #00a0dc;
+		}
+
+		.life-container {
+			
+
+			background: #262626;
+			padding: .9em;
+			font-weight: bold;
+			cursor: pointer;
+			color: #0b485e;
+			height: auto;
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+			
+		}
+		
+		
+		.crossIcon {
+		
+			transform: rotate(45deg);
+			height: auto;
+			width: 2.4em;
+			float: right;
+			background: transparent;
+			
+		}
+		
+		#message {
+			
+			display: none;
+			position: fixed;
+			z-index: 1;
+			top: 30%;
+			left: 35%;
+			
+		}
+		#message button:hover {
+			border : 1px solid white;
+		}
+
+		#txt2 {
+			
+			text-align: center;
+			width: 100%;
+			padding-top: 15%;
+			padding-bottom: 15%;
+			padding-left: 10%;
+			padding-right: 10%;
+			border: 1px solid #0b485e ;
+			border-bottom: 0;
+			border-top-left-radius: 10px;
+			color: #0b485e;
+			background: black;
+			font-size: 20px;
+			
+		}
+
+		#btn2{
+			
+			border: 0;
+			display: block;
+			padding: 1em 3em;
+			background-color: black;
+			color: white;
+			font-size : 13px;
+			margin-bottom: 1em;
+			background: #0b485e;
+			width: 120.5%;
+			margin-top: -40px;
+			margin-left: 0;
+			border-bottom-right-radius: 10px;
+			font-size: 15px;
+		}
+		
+		@keyframes add {
+            
+            from{
+                opacity: 0.4;
+                transform: translateY(40px);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+		
+		@keyframes remove {
+		
+			to{ transform: translateX(5%); opacity: .4;}
+		
+		}
+		
+		@keyframes fadeOut {
+			
+			to {transform: translateX(140%); opacity: 0 }
+				
+		}
+		
+		@keyframes show {
+			
+			from { transform: translateX(-100%); opacity: 0}
+		
+			to { transform: translateX(0); opacity: 1;}
+		
+	}
